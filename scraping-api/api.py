@@ -9,4 +9,7 @@ def hello_world():
 
 @app.route("/scrape")
 def scrape():
-    return scraping.default(request.args.get("pages", 1, type=int))
+    return scraping.scrape(request.args.get("pages", 1, type=int))
+
+def start():
+    app.run()

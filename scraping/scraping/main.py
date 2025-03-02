@@ -8,9 +8,7 @@ url='https://medium.com/_/graphql'
 
 cookie='_cfuvid=v.Xza.QM1NHQOqym2v_YlxelD411eXlaOIZOxP67ymA-1739705123490-0.0.1.1-604800000; _ga=GA1.1.742920608.1739705131; uid=8e7a764eca53; sid=1:QvJ1ne3Sb0p5qigT2so9VblhF07KnVJVIvyNZjoLve49V3u6sjg6VqSb3sUaDDGJ; xsrf=vMOZnSrNwAF0RbxT; cf_clearance=Itn_XoeeDDjnmr23c0AYw65UEIhdgRQXSOhYe3ifwPo-1739709398-1.2.1.1-F65udik2OaRlkqFwBg87XFTo.RrTBCA8ushj5jqu4qICn0a_N34jhDe4ueo5qlHI_Tpp8CRgsnGI5QsLGvx5usTbAjxtmVdFSB9e0HxvYB._plX.C0LggAktasCZTPvb5y3q83u4I0ajR__UQjVMDw5lRrDglvsYJUfccqiPP6_.3GUcJ.Mtih_IL90fr.9ANaZVAf1ifdzXl7hg1OWAvxiqXel5nlfjT.2MaOpfMgrfHQM.ClkNyG04CPlw7x6ciccm7JxBFO2QZTUmgvlKXFaRQJ0s.Jl0VVZdYzMuLPI; _ga_7JY7T788PK=GS1.1.1739709402.2.1.1739709421.0.0.0; _dd_s=rum=0&expire=1739710586621'
 
-def default(pages = None):
-    if(pages is None):
-        pages = int(sys.argv[1])
+def scrape(pages = None):
     
     results = []
     query = create_query()
